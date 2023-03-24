@@ -1,0 +1,15 @@
+import { TextInput } from "react-native";
+import styles from "./styles";
+
+export default function Input({ tipo, text, onChangeText }) {
+  return (
+    <>
+      <TextInput
+        keyboardType={tipo}
+        style={styles.inputMult}
+        placeholder={text}
+        onChangeText={onChangeText}
+      />
+    </>
+  );
+}
